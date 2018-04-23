@@ -24,4 +24,5 @@ lieblingszahl = input("Was ist ihre Lieblingszahl? ")
 print("Super, ich mag die zahl", lieblingszahl)
 print("Aber die coolere Zahl", int (lieblingszahl)+10,"mag ich noch mehr!")
 
-
+runden = input("Wie viele Runden sollen wir spielen?")
+runden = int(runden)
