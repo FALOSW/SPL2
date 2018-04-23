@@ -1,5 +1,5 @@
 #Grundlagen-Python.py
-
+import random 
 #Kommentare erfolgen mit hashtag
 
 #Ausgabe von Daten
@@ -28,4 +28,11 @@ runden = input("Wie viele Runden sollen wir spielen?")
 runden = int(runden)
 
 for runde in range(1,runden+1):
-    print("Runde", runde, "von", runden, ": Sieger: ", "Ich")
+    sieger = ""
+    zufallszahl = random.randint(1,6)
+    if (zufallszahl == 1 or zufallszahl == 3 or zufallszahl == 5):
+        sieger = "Ich"
+    else:
+        sieger = "Computer"
+    print("Runde", runde, "von", runden, ": Sieger: ", sieger, ": gewuerfelt wurde:", zufallszahl)
+print("Game Over")
