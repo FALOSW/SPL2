@@ -39,10 +39,14 @@ for runde in range(1,runden+1):
         siege = "Computer"
         siege_Computer += 1
     print("Runde", runde, "von", runden, ": Sieger: ", sieger, ": gewuerfelt wurde:", zufallszahl)
+    counter1 = 0
+    counter2 = 0
 if (siege_ich > siege_Computer):
-    print("Du Gewinnst!")
+    print("Der Gesamtsieger ist", wer)
+    counter1 = counter1+1
 elif (siege_Computer > siege_ich):
-    print("Du Verlierst!")
+    print("Der Gesamtsieger ist", wer)
+    counter2 = counter2+1
 else:
     print("Unentschieden!")        
 print("Game Over")
