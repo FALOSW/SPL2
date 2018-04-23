@@ -26,3 +26,6 @@ print("Aber die coolere Zahl", int (lieblingszahl)+10,"mag ich noch mehr!")
 
 runden = input("Wie viele Runden sollen wir spielen?")
 runden = int(runden)
+
+for runde in range(1,runden+1):
+    print("Runde", runde, "von", runden, ": Sieger: ", "Ich")
